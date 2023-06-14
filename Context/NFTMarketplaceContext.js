@@ -5,13 +5,13 @@ import { useRouter } from "next/router";
 import axios from "axios";
 import { create as ipfsHttpClient } from "ipfs-http-client";
 
-const projectId = process.env.NEXT_PUBLIC_PROJECT_ID;
-const projectSecretKey = process.env.NEXT_PUBLIC_SECRECT_KEY;
+const projectId = "2QJFQz3p51SxC5UkxgIGXIITxVn"; //process.env.NEXT_PUBLIC_PROJECT_ID
+const projectSecretKey = "079eb99f75c1a4dde7eea5441d9016ae"; //process.env.NEXT_PUBLIC_SECRECT_KEY
 const auth = `Basic ${Buffer.from(`${projectId}:${projectSecretKey}`).toString(
   "base64"
 )}`;
 
-const subdomain = process.env.NEXT_PUBLIC_SUBDOMAIN;
+const subdomain = "https://lakmarketplace.infura-ipfs.io"; //process.env.NEXT_PUBLIC_SUBDOMAIN;
 
 const client = ipfsHttpClient({
   host: "infura-ipfs.io",
@@ -59,7 +59,7 @@ export const NFTMarketplaceContext = React.createContext();
 export const NFTMarketplaceProvider = ({ children }) => {
   const titleData = "Discover, collect, and sell NFTs";
 
-  //------USESTAT
+  //------USESTATE
   const [error, setError] = useState("");
   const [openError, setOpenError] = useState(false);
   const [currentAccount, setCurrentAccount] = useState("");
@@ -186,7 +186,7 @@ export const NFTMarketplaceProvider = ({ children }) => {
     try {
       const provider = new ethers.providers.JsonRpcProvider(
         //--process.env.NEXT_PUBLIC_POLYGON_MUMBAI_RPC
-        "https://polygon-mumbai.g.alchemy.com/v2/0awa485pp03Dww2fTjrSCg7yHlZECw-K"
+        "https://polygon-mumbai.g.alchemy.com/v2/JsT2Ox8ZojPKGzbS6qVEYJd9NbF6skHK"
       );
 
       const contract = fetchContract(provider);

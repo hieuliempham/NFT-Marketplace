@@ -47,7 +47,7 @@ const reSellToken = () => {
           <input
             type="number"
             min={1}
-            placeholder="reSell price"
+            placeholder="resell price"
             className={formStyle.Form_box_input_userName}
             onChange={(e) => setPrice(e.target.value)}
           />

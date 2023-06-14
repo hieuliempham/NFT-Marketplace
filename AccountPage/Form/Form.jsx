@@ -20,7 +20,7 @@ const Form = () => {
             <label htmlFor="name">Username</label>
             <input
               type="text"
-              placeholder="shoaib bhai"
+              placeholder="Your username"
               className={Style.Form_box_input_userName}
             />
           </div>
@@ -64,7 +64,7 @@ const Form = () => {
                 <div className={Style.Form_box_input_box_icon}>
                   <TiSocialFacebook />
                 </div>
-                <input type="text" placeholder="http://shoaib" />
+                <input type="text" placeholder="http://facebook" />
               </div>
             </div>
             <div className={Style.Form_box_input}>
@@ -73,7 +73,7 @@ const Form = () => {
                 <div className={Style.Form_box_input_box_icon}>
                   <TiSocialTwitter />
                 </div>
-                <input type="text" placeholder="http://shoaib" />
+                <input type="text" placeholder="http://twitter" />
               </div>
             </div>
             <div className={Style.Form_box_input}>
@@ -82,7 +82,7 @@ const Form = () => {
                 <div className={Style.Form_box_input_box_icon}>
                   <TiSocialInstagram />
                 </div>
-                <input type="text" placeholder="http://shoaib" />
+                <input type="text" placeholder="http://insta" />
               </div>
             </div>
           </div>

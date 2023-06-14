@@ -22,7 +22,7 @@ const Profile = ({ currentAccount }) => {
         />
 
         <div className={Style.profile_account_info}>
-          <p>Shoaib Bhai</p>
+          <p>Karry Pham</p>
           <small>{currentAccount.slice(0, 18)}..</small>
         </div>
       </div>

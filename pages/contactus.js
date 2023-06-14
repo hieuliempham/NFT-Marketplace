@@ -33,11 +33,11 @@ const contactus = () => {
             </div>
             <div className={Style.contactus_box_box_left_item}>
               <h3>☎ PHONE</h3>
-              <p>0794269283</p>
+              <p>0566537504</p>
             </div>
             <div className={Style.contactus_box_box_left_item}>
               <h3>🌏 SOCIALS</h3>
-              <a href="https://www.facebook.com/kasiwam/">
+              <a href="https://www.facebook.com/hieuliempham/">
                 <TiSocialFacebook />
               </a>
               <a href="#">
@@ -46,7 +46,7 @@ const contactus = () => {
               <a href="#">
                 <TiSocialInstagram />
               </a>
-              <a href="https://www.youtube.com/channel/UCI_i6hoDDG0NUK2k4eKqdXQ">
+              <a href="#">
                 <TiSocialYoutube />
               </a>
               <a href="#">
@@ -60,7 +60,7 @@ const contactus = () => {
                 <label htmlFor="name">Full Name</label>
                 <input
                   type="text"
-                  placeholder="shoaib bhai"
+                  placeholder="your name"
                   className={formStyle.Form_box_input_userName}
                 />
               </div>

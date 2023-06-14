@@ -11,8 +11,13 @@ REPORT_GAS=true npx hardhat test
 npx hardhat node
 npx hardhat run scripts/deploy.js
 ```
+-khoi tao 20 account local
+npx hardhat node
+- deloyed contract Address
+npx hardhat run scripts\deploy.js --network localhost
+
 - tai goi .next
-- npm install
+ npm install
 
 - run chuong trinh
 - npm run dev
